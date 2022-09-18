@@ -4,15 +4,15 @@ export const ReferenceElement = styled.div`
   display: inline-block;
 `;
 
-export const TooltipContainer = styled.div<{ show: boolean; isArrow: boolean }>`
+export const TooltipContainer = styled.div<{ show: boolean }>`
   z-index: 1000;
   visibility: ${({ show }) => (show ? 'visible' : 'hidden')};
   opacity: ${({ show }) => (show ? 1 : 0)};
   transition: visibility 150ms linear, opacity 150ms linear;
   border-radius: 4px;
-  background-color: ${({ theme }) => theme.colors.grey['700']};
+  background-color: ${({ theme }) => theme.colors.grey['1000']};
   color: ${({ theme }) => theme.colors.grey[0]};
-  padding: ${({ isArrow }) => (isArrow ? '16px' : '4px 12px')};
+  padding: 4px 12px;
   max-width: 246px;
 `;
 

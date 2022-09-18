@@ -1,7 +1,21 @@
-
 # Nextjs Typescript UI Starter
 
-Fork from https://github.com/jpedroschmitz/typescript-nextjs-starter
+<p align="center">
+  <img src="https://github.com/HappyJayXin/nextjs-typescript-ui-starter/blob/master/public/banner.png?raw=true" alt="Nextjs Typescript UI Starter">
+</p>
+
+<br />
+
+<div align="center">Fork from <a href="https://github.com/jpedroschmitz/typescript-nextjs-starter">typescript-nextjs-starter</a></div>
+
+<br />
+
+<div align="center">
+  <img alt="License" src="https://img.shields.io/github/license/jpedroschmitz/typescript-nextjs-starter?style=flat-square&color=5e17eb&labelColor=000000">
+</div>
+
+<br />
+
 ## Features
 
 - ⚡️ Next.js 12
@@ -26,6 +40,7 @@ yarn dev
 ```
 
 Open `http://localhost:3000` with your browser to see the result.
+
 ## Documentation
 
 ### Requirements

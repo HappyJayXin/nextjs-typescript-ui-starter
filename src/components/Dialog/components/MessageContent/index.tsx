@@ -7,11 +7,11 @@ type Props = MessageProps;
 
 const MessageDialog = ({ title, body, onClose, t }: Props) => (
   <>
-    <Typography as="h2" variant="subTitle2" gutterBottom>
+    <Typography as="h2" variant="title6" gutterBottom>
       {title}
     </Typography>
     <Box paddingBottom="28px" width="300px">
-      <Typography as="p" variant="body5">
+      <Typography as="p" variant="body1">
         {body}
       </Typography>
     </Box>

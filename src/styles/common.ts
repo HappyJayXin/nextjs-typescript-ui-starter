@@ -6,7 +6,7 @@ export const PageWrapper = styled.div`
   height: 100vh;
   min-height: 100vh;
   box-sizing: border-box;
-  background-color: ${({ theme }) => theme.colors.background};
+  background-color: #00213c;
   display: flex;
   flex-direction: column;
   align-items: flex-start;

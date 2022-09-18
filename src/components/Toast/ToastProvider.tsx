@@ -26,6 +26,7 @@ const ToastProvider = ({ children }: ChildrenProps) => {
         autoDismissTimeout:
           options.autoDismissTimeout ?? defaultOptions.autoDismissTimeout,
         closeButton: Boolean(options.closeButton),
+        title: options.title,
       };
 
       setToasts((toasts) => [...toasts, newToast]);

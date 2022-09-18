@@ -16,7 +16,7 @@ const variantStyles = ({ theme, color }: VariantStyles) => ({
       background: ${theme.colors[color].dark};
     }
     &:active:not([disabled]) {
-      background: ${theme.colors[color].bright};
+      background: ${theme.colors[color].dark};
     }
     &:disabled {
       background: ${theme.colors.grey[300]};
@@ -24,15 +24,17 @@ const variantStyles = ({ theme, color }: VariantStyles) => ({
   `,
 
   outlined: css`
-    background: ${theme.colors.grey[0]};
+    background: transparent;
     color: ${theme.colors[color].main};
     border-color: ${theme.colors[color].main};
     border: 1px solid;
     &:hover:not([disabled]) {
       background: ${theme.colors[color].light};
+      color: ${theme.colors[color].contrastText};
+      border-color: ${theme.colors[color].light};
     }
     &:active:not([disabled]) {
-      background: ${theme.colors[color].tint};
+      background: ${theme.colors[color].light};
     }
     &:disabled {
       color: ${theme.colors.grey[300]};
@@ -45,9 +47,10 @@ const variantStyles = ({ theme, color }: VariantStyles) => ({
     color: ${theme.colors[color].main};
     &:hover:not([disabled]) {
       background: ${theme.colors[color].light};
+      color: ${theme.colors[color].contrastText};
     }
     &:active:not([disabled]) {
-      background: ${theme.colors[color].tint};
+      background: ${theme.colors[color].light};
     }
     &:disabled {
       color: ${theme.colors.grey[300]};
@@ -91,7 +94,7 @@ const buttonStyle = ({ fullWidth, minWidth = '110px' }: StyleProps) => css`
   border-width: 0;
   font-style: normal;
   box-sizing: border-box;
-  transition: all 0.3s linear;
+  transition: all 0.1s linear;
   outline: none;
   border-radius: 4px;
   min-width: ${fullWidth ? '100%' : minWidth};
@@ -104,14 +107,14 @@ export const GlobalButton = styled.button<StyleProps>`
   }
 
   ${buttonStyle};
-  ${({ variant = 'contained', color = 'secondary', theme }) =>
+  ${({ variant = 'contained', color = 'primary', theme }) =>
     variantStyles({ theme, color })[variant]}
   ${({ size = 'medium' }) => sizeStyles[size]}
 `;
 
 export const GlobalLink = styled.a<StyleProps>`
   ${buttonStyle};
-  ${({ variant = 'contained', color = 'secondary', theme }) =>
+  ${({ variant = 'contained', color = 'primary', theme }) =>
     variantStyles({ theme, color })[variant]}
   ${({ size = 'medium' }) => sizeStyles[size]}
 `;

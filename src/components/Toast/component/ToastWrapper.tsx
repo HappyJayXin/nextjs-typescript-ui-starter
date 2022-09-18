@@ -18,7 +18,7 @@ type Props = ChildrenProps &
 const offsetSize = '6px';
 
 const ToastStyle = styled(animated.div)`
-  background-color: ${({ theme }) => theme.colors.grey['700']};
+  background-color: ${({ theme }) => theme.colors.grey['1000']};
   opacity: 0.9;
   border-radius: 8px;
   padding: calc(12px - ${offsetSize}) 16px;
@@ -42,16 +42,12 @@ const ToastWrapper = ({
 
     <Box paddingY={offsetSize} minWidth={title ? '150px' : '0px'}>
       {title ? (
-        <Typography as="div" variant="body5" color="white" gutterBottom>
+        <Typography as="div" variant="body1" color="white" gutterBottom>
           {title}
         </Typography>
       ) : null}
 
-      <Typography
-        as="p"
-        variant="capation1"
-        color={title ? 'grey300' : 'white'}
-      >
+      <Typography as="p" variant="body2" color="white">
         {children}
       </Typography>
     </Box>

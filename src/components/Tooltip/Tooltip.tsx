@@ -121,9 +121,8 @@ const Tooltip = ({
           style={styles.popper}
           {...attributes.popper}
           show={show}
-          isArrow={isArrow}
         >
-          <Typography as="div" variant="capation1" color="white">
+          <Typography as="div" variant="body2" color="white">
             {content}
           </Typography>
           {isArrow ? (

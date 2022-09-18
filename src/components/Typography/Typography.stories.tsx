@@ -26,6 +26,12 @@ export const Title = () => (
     <Typography variant="title4" as="h1">
       Title 4
     </Typography>
+    <Typography variant="title5" as="h1">
+      Title 5
+    </Typography>
+    <Typography variant="title6" as="h1">
+      Title 6
+    </Typography>
   </div>
 );
 
@@ -43,35 +49,6 @@ export const SubTitle = () => (
     <Typography variant="subTitle2" as="h3">
       SubTitle1 2
     </Typography>
-    <Typography variant="subTitle3" as="h4">
-      SubTitle1 3
-    </Typography>
-  </div>
-);
-
-export const Label = () => (
-  <div
-    style={{
-      height: 'auto',
-      display: 'flex',
-      flexDirection: 'column',
-    }}
-  >
-    <Typography variant="label1" as="p">
-      Label 1
-    </Typography>
-    <Typography variant="label2" as="p">
-      Label 2
-    </Typography>
-    <Typography variant="label3" as="p">
-      Label 3
-    </Typography>
-    <Typography variant="label4" as="p">
-      Label 4
-    </Typography>
-    <Typography variant="label5" as="p">
-      Label 5
-    </Typography>
   </div>
 );
 
@@ -88,32 +65,6 @@ export const Body = () => (
     </Typography>
     <Typography variant="body2" as="p">
       Body 2
-    </Typography>
-    <Typography variant="body3" as="p">
-      Body 3
-    </Typography>
-    <Typography variant="body4" as="p">
-      Body 4
-    </Typography>
-    <Typography variant="body5" as="p">
-      Body 5
-    </Typography>
-  </div>
-);
-
-export const Capation = () => (
-  <div
-    style={{
-      height: 'auto',
-      display: 'flex',
-      flexDirection: 'column',
-    }}
-  >
-    <Typography variant="capation1" as="p">
-      Capation 1
-    </Typography>
-    <Typography variant="capation2" as="p">
-      Capation 2
     </Typography>
   </div>
 );

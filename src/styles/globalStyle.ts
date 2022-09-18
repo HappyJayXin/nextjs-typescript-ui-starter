@@ -6,7 +6,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     width: 100%;
-    background-color: ${({ theme }) => theme.colors.background};
+    background-color: #00213c;
     color: #002143;
   }
 

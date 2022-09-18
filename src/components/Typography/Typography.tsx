@@ -19,7 +19,7 @@ type Props = ChildrenProps & {
 };
 
 const TypographyStyle = styled.span<Props>(
-  ({ variant = 'title1' }) => fontStyle[variant],
+  ({ variant = 'body1' }) => fontStyle[variant],
   ({ color }) => (color ? textColor[color] : textColor['black']),
   ({ align = 'left', gutterBottom = false }) => ({
     textAlign: align,

@@ -25,7 +25,7 @@ const TitleWrapper = styled.header`
 const ModalTitle = ({ title, onClose }: Props) => (
   <TitleWrapper>
     <Box marginLeft="auto">
-      <Typography variant="label3" as="h6" color="primary">
+      <Typography variant="subTitle1" as="h6" color="primary">
         {title}
       </Typography>
     </Box>

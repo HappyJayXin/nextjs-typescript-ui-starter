@@ -51,6 +51,7 @@ const ToastContainer = ({ toasts }: { toasts: ToastType[] }) => {
                   appearance={item.appearance}
                   autoDismissTimeout={item.autoDismissTimeout}
                   closeButton={item.closeButton}
+                  title={item.title}
                   style={props}
                 >
                   {item.content}
